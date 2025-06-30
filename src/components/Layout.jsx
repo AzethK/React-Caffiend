@@ -49,7 +49,7 @@ const Layout = (props) => {
         design library
         <br />
         Check out the project on{" "}
-        <a href="https://github.com/AzethK" target="_blank">
+        <a href="https://github.com/AzethK/caffiend" target="_blank">
           GitHub!
         </a>
       </p>
