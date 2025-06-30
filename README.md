@@ -1,3 +1,3 @@
 # Caffiend
 
-Coffe-tracking app that uses React, FantaCSS and Firebase 
+Coffee-tracking app that uses React, FantaCSS and Firebase 
