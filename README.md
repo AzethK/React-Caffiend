@@ -1,5 +1,5 @@
 # Caffiend
 
-Coffee-tracking app that uses React, FantaCSS and Firebase 
+Projeto de monitoramento de consumo de café, utiliza React, FantaCSS e Firebase 
 
 Link: https://react-caffiend.netlify.app/
