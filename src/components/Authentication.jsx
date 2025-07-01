@@ -11,16 +11,22 @@ const Authentication = (props) => {
 
   const { signup, login } = useAuth();
 
+  const validateInputs = () => {
+    if (!email) return "Email is required.";
+    if (!email.includes("@")) return "Please enter a valid email address.";
+    if (!password) return "Password is required.";
+    if (password.length < 6) return "Password must be at least 6 characters.";
+    if (isAuthenticating) return "Authentication is already in progress.";
+    return null;
+  };
+
   async function handleAuthenticate() {
-    if (
-      !email ||
-      !email.includes("@") ||
-      !password ||
-      password.length < 6 ||
-      isAuthenticating
-    ) {
+    const validationError = validateInputs();
+    if (validationError) {
+      setError(validationError);
       return;
     }
+
     try {
       setIsAuthenticating(true);
       setError(null);
